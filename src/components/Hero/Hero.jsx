@@ -8,7 +8,7 @@ import Calories from "../../assets/calories.png"
 
 const Hero = () => {
   return (
-    <div className='hero'>
+    <div className='code'>
           <div className="left-h">
             <Header/>
             {/* the best ad */}
@@ -17,7 +17,7 @@ const Hero = () => {
               <span>Veni vidi vinci : Gadi Bullah</span>
             </div>
             {/* hero heading */}
-            <div className="hero-text">
+            <div className="hero-code">
               <div>
                 <span>Fix </span>
                 <span className='stroke-text'>the cause,</span>
@@ -53,12 +53,24 @@ const Hero = () => {
               <buttons className="btn">Learn More</buttons>
             </div>
           </div>
-      <div className="right-side">
+      <div className="right-h">
         <button className="btn">Join me</button>
-        <div className="heart-rate">
-          <img src={Heart}/>
+        <div className="code-rate">
+          <img src={Heart} alt=""/>
           <span>Heart rate</span>
-          <span>bpm</span>
+          <span>116 bpm</span>
+        </div>
+        {/* hero images */}
+        <img src={hero_image} alt="" className="code-image"/>
+        <img src={hero_image_back} alt="" className="code-image-back"/>
+
+        {/* Calories */}
+        <div className="calories">
+          <img src={Calories} alt=""/>
+          <div>
+          <span>Calories Burn</span>
+          <span>2.3 Cal</span>
+          </div>
         </div>
       </div>
     </div>
