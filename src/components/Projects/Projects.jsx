@@ -6,6 +6,7 @@ import  RightArrow from '../../assets/rightArrow.png'
 const Projects = () => {
   return (
     <div className="Projects" id="projects">
+        {/* header */}
         <div className="projects-header">
             <span className='stroke-text'>Exlplore Some</span>
             <span>Projects</span>
