@@ -20,7 +20,41 @@ const Reasons = () => {
             <img src={image4} alt="" />
             {/* <img src="" alt="" /> */}
         </div>
-        <div className="right-r"></div>
+        <div className="right-r"> 
+         <span>Some Reasons</span> 
+          <div>
+            <span className='stroke-text'>Why</span>
+            <span>Choose Us</span>
+          </div>
+          <div className='details-r'></div>
+          <div><img src={tick} alt=""></img>
+          <span>Good</span>
+          </div>
+          <div>
+            <img src={tick} alt="" />
+            <span>Good</span>
+          </div>
+          <div>
+          <img src={tick} alt="" />
+          <span>Good</span>
+          </div>
+          <div>
+          <img src={tick} alt="" />
+          <span>Good</span>
+          </div>
+          <span style={{
+          color:"var(--gray)",
+          fontWeight: "normal",
+          }}>
+            Our Patners
+            </span>
+            <div className="partners">
+              <img src={nb} alt="" />
+              <img src={adidas} alt="" />
+              <img src={nike} alt="" />
+            </div>
+        </div>
+
     </div>
   )
 }
