@@ -50,3 +50,14 @@
 .btn:hover{
   cursor: pointer;
 }
+/* This will make the background to have 
+sot of changing color */
+.blur{
+  background: rgba(176, 132, 20, 0.69);
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(150px);
+  z-index: -9;
+
+}
+

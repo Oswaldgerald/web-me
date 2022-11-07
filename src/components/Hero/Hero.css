@@ -1,8 +1,9 @@
-.code{
+.code {
     display: flex;
     justify-content: space-between;
 }
-.left-h{
+
+.left-h {
     padding: 2rem;
     padding-top: 1.5rem;
     flex: 3;
@@ -10,17 +11,19 @@
     gap: 2rem;
     flex-direction: column;
 }
-.right-h{
-    flex:1;
-    position:relative;
+
+.right-h {
+    flex: 1;
+    position: relative;
     background-color: black;
 }
-.the-best-ad{
+
+.the-best-ad {
     margin-top: 4rem;
     background-color: rgb(3, 62, 62);
     border-radius: 4rem;
     width: fit-content;
-    padding: 20px 20px ;
+    padding: 20px 20px;
     text-transform: uppercase;
     color: white;
     position: relative;
@@ -30,10 +33,12 @@
     font-weight: bold;
 
 }
-.the-best-ad>span{
+
+.the-best-ad>span {
     z-index: 2;
 }
-.the-best-ad>div{
+
+.the-best-ad>div {
     position: absolute;
     background-color: black;
     width: 5.4rem;
@@ -43,7 +48,7 @@
     z-index: 1;
 }
 
-.hero-code{
+.hero-code {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
@@ -54,49 +59,54 @@
     text-overflow: inherit;
 }
 
-.figures{
+.figures {
     display: flex;
     gap: 2rem;
 }
-.figures>div{
+
+.figures>div {
     display: flex;
     flex-direction: column;
 }
 
-.figures>div>span:nth-of-type(1){
+.figures>div>span:nth-of-type(1) {
     color: white;
     font-size: 2rem;
 }
 
-.figures>div>span:nth-of-type(2){
-    color:var(--gray);
+.figures>div>span:nth-of-type(2) {
+    color: var(--gray);
     text-transform: uppercase;
 }
 
-.hero-buttons{
+.hero-buttons {
     display: flex;
     gap: 1rem;
-    font-weight:normal;
+    font-weight: normal;
 
 }
-.hero-buttons>:nth-child(1){
+
+.hero-buttons>:nth-child(1) {
     color: white;
     background-color: var(--orange);
     width: 8rem;
 }
 
-.hero-buttons>:nth-child(2){
+.hero-buttons>:nth-child(2) {
     color: white;
     background-color: transparent;
     width: 8rem;
     border: 2px solid var(--orange);
 }
-.right-h>.btn{
+
+.right-h>.btn {
     position: absolute;
-    right: 3rem;top:2rem;color: black;
+    right: 3rem;
+    top: 2rem;
+    color: black;
 }
 
-.code-rate{
+.code-rate {
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -110,55 +120,143 @@
     top: 7rem;
 }
 
-.code-rate>img{
+.code-rate>img {
     width: 2rem;
 }
 
-.code-rate>:nth-child(2){
+.code-rate>:nth-child(2) {
     color: var(--gray);
 }
-.code-rate>:nth-child(3){
+
+.code-rate>:nth-child(3) {
     color: white;
     font-size: 1.5rem;
 }
 
-.code-image{
+.code-image {
     position: absolute;
     top: 10rem;
     right: 8rem;
     width: 23rem;
 }
 
-.code-image-back{
+.code-image-back {
     position: absolute;
     top: 4rem;
     right: 23rem;
     width: 15rem;
     z-index: -1;
 }
-.calories{
+
+.calories {
     display: flex;
     gap: 2rem;
     background-color: var(--caloryCard);
     border-radius: 5px;
     padding: 1rem;
-    width:fit-content;
+    width: fit-content;
     position: absolute;
     top: 32rem;
     right: 28rem;
 }
 
-.calories>div{
+.calories>div {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.calories>div>:nth-child(1){
- color: var(--gray);
+.calories>div>:nth-child(1) {
+    color: var(--gray);
 }
 
-.calories>div>:nth-child(2){
+.calories>div>:nth-child(2) {
     color: white;
     font-size: 1.5rem;
-   }
+}
+
+.code-blur {
+    width: 22rem;
+    height: 30rem;
+    left: 0;
+}
+
+@media screen and (max-width:768px) {
+    .code {
+        flex-direction: column;
+    }
+
+    .code-blur {
+        width: 14rem;
+    }
+
+    .the-best-ad {
+        margin-top: 0;
+        font-size: small;
+        align-self: center;
+        transform: scale(0.8);
+    }
+
+    .hero-code {
+        font-size: xx-large;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .hero-code>div:nth-of-type(3) {
+        font-size: small;
+        font-weight: 200;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .figures>div>span :nth-of-type(1) {
+        font-size: large;
+    }
+
+    .figures>div>span :nth-of-type(2) {
+        font-size: small;
+    }
+}
+
+.right-h {
+    position: relative;
+    background: none;
+}
+
+.code-rate {
+    left: 1rem;
+    top: 2rem;
+}
+
+.calories {
+    position: relative;
+    top: 5rem;
+    left: 2rem;
+}
+
+.calories>img {
+    width: 2rem;
+}
+
+.calories>div>:nth-child(2) {
+    color: white;
+    font-size: 1rem;
+}
+.code-image{
+    position: relative;
+    width: 15rem;
+    left: 7rem;
+    top: 4rem;
+    align-self: center;
+}
+.code-image-back{
+    width: 15rem;
+    left: 2rem;
+    top: 0rem;
+}
